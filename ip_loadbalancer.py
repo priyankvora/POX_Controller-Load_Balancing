@@ -3,7 +3,6 @@ A very sloppy IP load balancer.
 
 Run it with --ip=<Service IP> --servers=IP1,IP2,...
 
-Please submit improvements. :)
 """
 
 from pox.core import core
@@ -166,6 +165,7 @@ class iplb (object):
     return r
 
 "I have changed this part of code, which is Round-Robin fashion algorithm"
+
   def _pick_server (self, key, inport):
     global selected_server
     a=self.live_servers.keys()
