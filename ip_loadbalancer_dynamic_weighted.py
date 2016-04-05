@@ -3,7 +3,6 @@ A very sloppy IP load balancer.
 
 Run it with --ip=<Service IP> --servers=IP1,IP2,...
 
-Please submit improvements. :)
 """
 
 from pox.core import core
@@ -166,6 +165,7 @@ class iplb (object):
     return r
 
 "I have changed this part of code, which is Dynamic Weighted algorithm. It will pick server based on weighted given as starting of load balancing."
+
   def _pick_server (self, key, inport):
     #log.info("it is in iplb inside _pick_server")
     """
